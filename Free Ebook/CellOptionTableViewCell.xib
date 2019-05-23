@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellOptionTableViewCell" rowHeight="88" id="KGk-i7-Jjw" customClass="CellOptionTableViewCell" customModule="Free_Ebook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="veV-PO-FQm">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="55"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIV-mN-ZBO">
+                                <rect key="frame" x="10" y="10" width="126.5" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSc-wH-42A">
+                                        <rect key="frame" x="19" y="2.5" width="89" height="30"/>
+                                        <state key="normal" title="New Release">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectNewRelease:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="LF6-Us-5gS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="aSc-wH-42A" firstAttribute="centerY" secondItem="zIV-mN-ZBO" secondAttribute="centerY" id="2iV-zD-9Mz"/>
+                                    <constraint firstItem="aSc-wH-42A" firstAttribute="centerX" secondItem="zIV-mN-ZBO" secondAttribute="centerX" id="Fzz-3o-2ux"/>
+                                    <constraint firstAttribute="height" constant="35" id="JeK-bf-1Y6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7o-GC-kPh">
+                                <rect key="frame" x="161.5" y="10" width="127" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RsE-dR-Fv0">
+                                        <rect key="frame" x="25.5" y="2.5" width="76" height="30"/>
+                                        <state key="normal" title="Top Author">
+                                            <color key="titleColor" red="0.24703386429999999" green="0.2470747828" blue="0.24702483419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectTopAuthor:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4rF-NE-rWI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="RsE-dR-Fv0" firstAttribute="centerY" secondItem="u7o-GC-kPh" secondAttribute="centerY" id="8xp-DS-lZF"/>
+                                    <constraint firstItem="RsE-dR-Fv0" firstAttribute="centerX" secondItem="u7o-GC-kPh" secondAttribute="centerX" id="bYF-sZ-GeO"/>
+                                    <constraint firstAttribute="height" constant="35" id="p76-xG-ovQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7u2-Yu-VWo">
+                                <rect key="frame" x="313.5" y="10" width="126.5" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvm-aV-iCp">
+                                        <rect key="frame" x="26" y="2.5" width="74" height="30"/>
+                                        <state key="normal" title="Top Month">
+                                            <color key="titleColor" red="0.24703386429999999" green="0.2470747828" blue="0.24702483419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectTopMonth:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ohi-jf-zie"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="CBQ-FJ-fcY"/>
+                                    <constraint firstItem="hvm-aV-iCp" firstAttribute="centerY" secondItem="7u2-Yu-VWo" secondAttribute="centerY" id="irv-aA-A11"/>
+                                    <constraint firstItem="hvm-aV-iCp" firstAttribute="centerX" secondItem="7u2-Yu-VWo" secondAttribute="centerX" id="lff-Ag-Dm3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u7o-GC-kPh" firstAttribute="centerY" secondItem="veV-PO-FQm" secondAttribute="centerY" id="EHx-T3-y6R"/>
+                            <constraint firstItem="zIV-mN-ZBO" firstAttribute="width" secondItem="veV-PO-FQm" secondAttribute="width" multiplier="9/32" id="EvX-aR-h8g"/>
+                            <constraint firstItem="7u2-Yu-VWo" firstAttribute="width" secondItem="veV-PO-FQm" secondAttribute="width" multiplier="9/32" id="G4M-iG-vKD"/>
+                            <constraint firstItem="u7o-GC-kPh" firstAttribute="centerX" secondItem="veV-PO-FQm" secondAttribute="centerX" id="IsY-DP-f9U"/>
+                            <constraint firstAttribute="height" constant="55" id="R5g-sL-n6s"/>
+                            <constraint firstItem="7u2-Yu-VWo" firstAttribute="centerY" secondItem="veV-PO-FQm" secondAttribute="centerY" id="TED-Xb-81M"/>
+                            <constraint firstAttribute="trailing" secondItem="7u2-Yu-VWo" secondAttribute="trailing" constant="10" id="Vwu-Lt-vU2"/>
+                            <constraint firstItem="u7o-GC-kPh" firstAttribute="width" secondItem="veV-PO-FQm" secondAttribute="width" multiplier="9/32" id="bKl-5y-mTr"/>
+                            <constraint firstItem="zIV-mN-ZBO" firstAttribute="leading" secondItem="veV-PO-FQm" secondAttribute="leading" constant="10" id="sYg-BY-RNa"/>
+                            <constraint firstItem="zIV-mN-ZBO" firstAttribute="centerY" secondItem="veV-PO-FQm" secondAttribute="centerY" id="tAk-qY-1bV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="veV-PO-FQm" secondAttribute="trailing" id="4Wb-yP-i9o"/>
+                    <constraint firstItem="veV-PO-FQm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rXU-Mi-qkK"/>
+                    <constraint firstItem="veV-PO-FQm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="z43-6L-L7n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="viewNewRelease" destination="zIV-mN-ZBO" id="Euc-79-GYo"/>
+                <outlet property="viewTopAuthor" destination="u7o-GC-kPh" id="2Ce-bh-Fw4"/>
+                <outlet property="viewTopMonth" destination="7u2-Yu-VWo" id="dqN-Bu-7JC"/>
+            </connections>
+            <point key="canvasLocation" x="345.60000000000002" y="190.70464767616193"/>
+        </tableViewCell>
+    </objects>
+</document>

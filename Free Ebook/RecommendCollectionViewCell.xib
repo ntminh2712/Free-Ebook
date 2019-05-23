@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recommendCollectionViewCell" id="L76-Zl-iGV" customClass="RecommendCollectionViewCell" customModule="Free_Ebook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="270"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="270"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6K-ds-D5i">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="270"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Austen, Jane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbk-SZ-fpF">
+                                <rect key="frame" x="6" y="234" width="163" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pride and Prejud" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbH-aa-cb0">
+                                <rect key="frame" x="6" y="203" width="163" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEO-mK-bke">
+                                <rect key="frame" x="3" y="3" width="169" height="190"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-collectionview" translatesAutoresizingMaskIntoConstraints="NO" id="qCL-aw-H6g">
+                                        <rect key="frame" x="3" y="3" width="163" height="184"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="qCL-aw-H6g" firstAttribute="leading" secondItem="gEO-mK-bke" secondAttribute="leading" constant="3" id="0Gr-z7-Ehi"/>
+                                    <constraint firstAttribute="bottom" secondItem="qCL-aw-H6g" secondAttribute="bottom" constant="3" id="6Nq-od-Efe"/>
+                                    <constraint firstAttribute="height" constant="190" id="Tat-CH-829"/>
+                                    <constraint firstItem="qCL-aw-H6g" firstAttribute="top" secondItem="gEO-mK-bke" secondAttribute="top" constant="3" id="lM5-2j-1R2"/>
+                                    <constraint firstAttribute="trailing" secondItem="qCL-aw-H6g" secondAttribute="trailing" constant="3" id="zNw-a6-67U"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P73-IU-0yV">
+                                <rect key="frame" x="130" y="3" width="30" height="30"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorite" translatesAutoresizingMaskIntoConstraints="NO" id="os7-lt-Iud">
+                                        <rect key="frame" x="5" y="5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="8oG-7a-Sg2"/>
+                                            <constraint firstAttribute="width" constant="20" id="z4v-mM-B9s"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="ceA-I1-RoG"/>
+                                    <constraint firstItem="os7-lt-Iud" firstAttribute="centerX" secondItem="P73-IU-0yV" secondAttribute="centerX" id="fSI-Xm-uvP"/>
+                                    <constraint firstItem="os7-lt-Iud" firstAttribute="centerY" secondItem="P73-IU-0yV" secondAttribute="centerY" id="gxb-vo-Mm0"/>
+                                    <constraint firstAttribute="height" constant="30" id="t9d-qD-oAX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDh-G3-o3a">
+                                <rect key="frame" x="0.0" y="0.0" width="175" height="270"/>
+                                <connections>
+                                    <action selector="selectStory:" destination="L76-Zl-iGV" eventType="touchUpInside" id="PPe-C4-MDD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLV-iv-i32">
+                                <rect key="frame" x="130" y="3" width="30" height="30"/>
+                                <connections>
+                                    <action selector="handlerFavorites:" destination="L76-Zl-iGV" eventType="touchUpInside" id="daU-57-SaZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gEO-mK-bke" secondAttribute="trailing" constant="3" id="0zj-VA-pfU"/>
+                            <constraint firstItem="DDh-G3-o3a" firstAttribute="top" secondItem="r6K-ds-D5i" secondAttribute="top" id="1TV-7X-wq3"/>
+                            <constraint firstItem="HLV-iv-i32" firstAttribute="centerX" secondItem="P73-IU-0yV" secondAttribute="centerX" id="4Ua-mT-e7Y"/>
+                            <constraint firstItem="CbH-aa-cb0" firstAttribute="leading" secondItem="qCL-aw-H6g" secondAttribute="leading" id="57g-ro-oNi"/>
+                            <constraint firstItem="CbH-aa-cb0" firstAttribute="top" secondItem="gEO-mK-bke" secondAttribute="bottom" constant="10" id="7YB-FW-0Ax"/>
+                            <constraint firstAttribute="trailing" secondItem="DDh-G3-o3a" secondAttribute="trailing" id="8BI-cs-cgx"/>
+                            <constraint firstAttribute="bottom" secondItem="DDh-G3-o3a" secondAttribute="bottom" id="AwG-by-mov"/>
+                            <constraint firstItem="HLV-iv-i32" firstAttribute="height" secondItem="P73-IU-0yV" secondAttribute="height" id="GNR-e1-2fz"/>
+                            <constraint firstItem="xbk-SZ-fpF" firstAttribute="trailing" secondItem="CbH-aa-cb0" secondAttribute="trailing" id="GqH-iv-Vkz"/>
+                            <constraint firstItem="HLV-iv-i32" firstAttribute="width" secondItem="P73-IU-0yV" secondAttribute="width" id="I7z-RL-ckj"/>
+                            <constraint firstItem="gEO-mK-bke" firstAttribute="top" secondItem="r6K-ds-D5i" secondAttribute="top" constant="3" id="Kuu-2S-tOU"/>
+                            <constraint firstItem="DDh-G3-o3a" firstAttribute="leading" secondItem="r6K-ds-D5i" secondAttribute="leading" id="NMp-GU-muH"/>
+                            <constraint firstItem="P73-IU-0yV" firstAttribute="top" secondItem="r6K-ds-D5i" secondAttribute="top" constant="3" id="Tq7-Hz-dGv"/>
+                            <constraint firstItem="gEO-mK-bke" firstAttribute="leading" secondItem="r6K-ds-D5i" secondAttribute="leading" constant="3" id="ULH-E2-yRy"/>
+                            <constraint firstItem="xbk-SZ-fpF" firstAttribute="leading" secondItem="CbH-aa-cb0" secondAttribute="leading" id="htJ-gX-FRW"/>
+                            <constraint firstItem="xbk-SZ-fpF" firstAttribute="top" secondItem="CbH-aa-cb0" secondAttribute="bottom" constant="10" id="myA-0Y-Y3a"/>
+                            <constraint firstItem="CbH-aa-cb0" firstAttribute="top" secondItem="gEO-mK-bke" secondAttribute="bottom" constant="10" id="ouz-Oh-Rh4"/>
+                            <constraint firstItem="HLV-iv-i32" firstAttribute="centerY" secondItem="P73-IU-0yV" secondAttribute="centerY" id="pJs-TJ-aGC"/>
+                            <constraint firstItem="CbH-aa-cb0" firstAttribute="trailing" secondItem="qCL-aw-H6g" secondAttribute="trailing" id="tTD-xu-YyO"/>
+                            <constraint firstAttribute="trailing" secondItem="P73-IU-0yV" secondAttribute="trailing" constant="15" id="zy1-1h-uEK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="r6K-ds-D5i" firstAttribute="centerX" secondItem="LP0-qp-dzo" secondAttribute="centerX" id="0MA-mU-qc2"/>
+                <constraint firstItem="r6K-ds-D5i" firstAttribute="centerY" secondItem="LP0-qp-dzo" secondAttribute="centerY" id="4Tu-6t-QGk"/>
+                <constraint firstItem="r6K-ds-D5i" firstAttribute="width" secondItem="L76-Zl-iGV" secondAttribute="width" id="J1B-sy-cXR"/>
+                <constraint firstItem="r6K-ds-D5i" firstAttribute="height" secondItem="L76-Zl-iGV" secondAttribute="height" id="nQD-KV-Qrf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="LP0-qp-dzo"/>
+            <size key="customSize" width="175" height="270"/>
+            <connections>
+                <outlet property="imgAvatar" destination="qCL-aw-H6g" id="0XX-pc-Zel"/>
+                <outlet property="imgFavorites" destination="os7-lt-Iud" id="4cf-AE-yVh"/>
+                <outlet property="lblNameAuthor" destination="CbH-aa-cb0" id="kB8-TX-FgE"/>
+                <outlet property="lblNameStory" destination="xbk-SZ-fpF" id="9vT-Uy-l6M"/>
+                <outlet property="viewContent" destination="gEO-mK-bke" id="ccT-Xf-ffo"/>
+                <outlet property="viewFavorites" destination="P73-IU-0yV" id="OfL-nM-I1x"/>
+            </connections>
+            <point key="canvasLocation" x="268" y="243.77811094452775"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="default-collectionview" width="180" height="240"/>
+        <image name="favorite" width="20" height="19.5"/>
+    </resources>
+</document>

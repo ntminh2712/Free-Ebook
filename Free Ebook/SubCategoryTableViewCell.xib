@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="subCategoryTableViewCell" rowHeight="59" id="KGk-i7-Jjw" customClass="SubCategoryTableViewCell" customModule="Free_Ebook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IQButtonBarArrowRight.png" translatesAutoresizingMaskIntoConstraints="NO" id="CTP-6z-rZF">
+                        <rect key="frame" x="305" y="23.5" width="6" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="db7-Wj-ANk"/>
+                            <constraint firstAttribute="width" constant="6" id="x2c-o6-grq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbU-8Z-Zof">
+                        <rect key="frame" x="31" y="19" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeO-mx-TzX">
+                        <rect key="frame" x="0.0" y="0.0" width="326" height="58.5"/>
+                        <connections>
+                            <action selector="selectSubCategory:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HZ0-mi-WCC"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MeO-mx-TzX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1DT-Jb-uEB"/>
+                    <constraint firstItem="MeO-mx-TzX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1MO-mV-DtG"/>
+                    <constraint firstAttribute="bottom" secondItem="MeO-mx-TzX" secondAttribute="bottom" id="2mf-ju-o58"/>
+                    <constraint firstItem="KbU-8Z-Zof" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3bu-0O-Cfy"/>
+                    <constraint firstItem="CTP-6z-rZF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IJr-4b-Zwx"/>
+                    <constraint firstAttribute="trailing" secondItem="MeO-mx-TzX" secondAttribute="trailing" id="TbW-uq-f47"/>
+                    <constraint firstItem="KbU-8Z-Zof" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="WKF-oh-hFQ"/>
+                    <constraint firstAttribute="trailing" secondItem="CTP-6z-rZF" secondAttribute="trailing" constant="15" id="Zmd-uT-QV7"/>
+                    <constraint firstItem="MeO-mx-TzX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gfg-kr-FdJ"/>
+                    <constraint firstAttribute="bottom" secondItem="MeO-mx-TzX" secondAttribute="bottom" id="v3H-qe-oFG"/>
+                    <constraint firstItem="MeO-mx-TzX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vsN-Cf-Xlg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblNameSubCategory" destination="KbU-8Z-Zof" id="892-Wf-ARx"/>
+            </connections>
+            <point key="canvasLocation" x="126.40000000000001" y="161.46926536731635"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="IQButtonBarArrowRight.png" width="12" height="21"/>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryTableViewCell" rowHeight="99" id="KGk-i7-Jjw" customClass="CategoryTableViewCell" customModule="Free_Ebook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="306" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="306" height="91.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAC-Rp-GpN">
+                        <rect key="frame" x="8" y="8" width="290" height="75.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Children" translatesAutoresizingMaskIntoConstraints="NO" id="vCu-TY-0Ln">
+                                <rect key="frame" x="3" y="3" width="284" height="69.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzC-cG-Bwo">
+                                <rect key="frame" x="10" y="33" width="75.5" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28o-dL-BQp">
+                                <rect key="frame" x="0.0" y="0.0" width="290" height="75.5"/>
+                                <connections>
+                                    <action selector="selectCategory:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="p01-qf-EcY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UzC-cG-Bwo" secondAttribute="bottom" constant="10" id="CXg-NU-J35"/>
+                            <constraint firstItem="vCu-TY-0Ln" firstAttribute="top" secondItem="dAC-Rp-GpN" secondAttribute="top" constant="3" id="Ec1-39-bYD"/>
+                            <constraint firstItem="28o-dL-BQp" firstAttribute="top" secondItem="dAC-Rp-GpN" secondAttribute="top" id="EvD-nx-P8A"/>
+                            <constraint firstItem="28o-dL-BQp" firstAttribute="leading" secondItem="dAC-Rp-GpN" secondAttribute="leading" id="GQO-Lm-LCY"/>
+                            <constraint firstItem="UzC-cG-Bwo" firstAttribute="leading" secondItem="dAC-Rp-GpN" secondAttribute="leading" constant="10" id="GxR-P7-O87"/>
+                            <constraint firstItem="vCu-TY-0Ln" firstAttribute="leading" secondItem="dAC-Rp-GpN" secondAttribute="leading" constant="3" id="TvT-yE-icR"/>
+                            <constraint firstAttribute="trailing" secondItem="vCu-TY-0Ln" secondAttribute="trailing" constant="3" id="XvZ-yM-upO"/>
+                            <constraint firstAttribute="bottom" secondItem="vCu-TY-0Ln" secondAttribute="bottom" constant="3" id="g4e-3c-ews"/>
+                            <constraint firstAttribute="trailing" secondItem="28o-dL-BQp" secondAttribute="trailing" id="q7t-5o-8pR"/>
+                            <constraint firstAttribute="bottom" secondItem="28o-dL-BQp" secondAttribute="bottom" id="rDm-7l-ae5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dAC-Rp-GpN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="R4v-zY-Llq"/>
+                    <constraint firstAttribute="trailing" secondItem="dAC-Rp-GpN" secondAttribute="trailing" constant="8" id="Sdm-1w-w4e"/>
+                    <constraint firstAttribute="bottom" secondItem="dAC-Rp-GpN" secondAttribute="bottom" constant="8" id="dfm-kP-hUM"/>
+                    <constraint firstItem="dAC-Rp-GpN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="tNr-KO-gs1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgAvatar" destination="vCu-TY-0Ln" id="3fo-bP-60q"/>
+                <outlet property="lblName" destination="UzC-cG-Bwo" id="9im-KM-q2s"/>
+                <outlet property="viewContent" destination="dAC-Rp-GpN" id="Enj-lt-vrp"/>
+            </connections>
+            <point key="canvasLocation" x="-126.40000000000001" y="125.03748125937032"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Children" width="299" height="168"/>
+    </resources>
+</document>
